@@ -8,7 +8,7 @@
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-header-logo">
-          <img src="img/logo-sedona.svg" width="140" height="71" alt="Sedona">
+          <img src="img/logo-sedona.svg" width="140" height="71" alt="Добро пожаловать в Седону">
         </a>
       <ul class="site-navigation">
         <li><a href="info.html">Информация</a></li>
@@ -70,43 +70,53 @@
      <section class="booking">
        <h2>Заинтересовались?</h2>
        <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-       <button>Поиск гостиницы в Седоне</button>
+       <button type="button">Поиск гостиницы в Седоне</button>
          <section class="search-hotels">
          <h3 class="visually-hidden">Поиск гостиницы</h3>
+         <form action="https://echo.htmlacademy.ru" method="post">
          <ul>
            <li>
-             <span>Дата заезда:</span>
+             <label for="arrival-date">Дата заезда:</label>
+             <input id="arrival-date" type="date" name="arrival-date" placeholder="24 апреля 2017">
            </li>
            <li>
-             <span>Дата выезда</span>
+             <label for="departure-date">Дата выезда</label>
+             <input id="departure-date" type="date" name="departure-date" placeholder="4 июля 2017">
            </li>
            <li>
-             <span>Взрослые</span>
+             <label for="adults-amount">Взрослые</label>
+             <input id="adults-amount" type="number" name="adults-amount" min="1" value="2">
+             <button>Больше</button>
+             <button>Меньше</button>
            </li>
            <li>
-             <span>Дети</span>
+             <label for="children-amount">Дети</label>
+             <input id="children-amount" type="number" name="children-amount" min="0" value="0">
+             <button>Больше</button>
+             <button>Меньше</button>
            </li>
          </ul>
+         <button type="submit">Найти</button>
+       </form>
        </section>
      </section>
      <section class="map">
-       <h2 class="visually-hidden">Карта</h2>
-       <!-- карта -->
-       <img src="img/map.jpg" width="1200" height="593" alt="Карта">
+       <h2 class="visually-hidden">Седона на карте</h2>
+       <img src="img/map.jpg" width="1200" height="593" alt="Расположение города Седона на карте">
      </section>
   </main>
     <footer class="main-footer">
       <b>#visitsedona</b>
       <div class="footer-social">
         <ul>
-          <li class="social-button"><a href="#">Вконтакте</a></li>
-          <li class="social-button"><a href="#">Фейсбук</a></li>
-          <li class="social-button"><a href="#">Youtube</a></li>
+          <li class="social-button" aria-label="Страница Седона во ВКонтакте"><a href="#">Вконтакте</a></li>
+          <li class="social-button" aria-label="Страница Седона на Фейсбуке"><a href="#">Фейсбук</a></li>
+          <li class="social-button" aria-label="Канал Седона на Ютубе"><a href="#">Youtube</a></li>
         </ul>
       </div>
       <p class="footer-copyright">
         <b>Webside by</b>
-        <a class="button" href="http://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="htmlacademy-logo"></a>
+        <a class="button" href="http://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTMLAcademy"></a>
       </p>
     </footer>
   </body>
