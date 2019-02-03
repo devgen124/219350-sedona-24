@@ -22,27 +22,52 @@
     <h1 class="visually-hidden">Выбор гостиницы</h1>
       <section class="filters">
         <h2 class="visually-hidden">Фильтр поиска</h2>
-        <section class="infrastructure">
-          <h3>Инфраструктура</h3>
+        <form action="https://echo.htmlacademy.ru" method="get">
+          <!-- для фильтра думаю get как раз -->
+        <fieldset class="infrastructure">
+          <legend>Инфраструктура</legend>
           <ul>
-            <li>Бассейн</li>
-            <li>Парковка</li>
-            <li>Wi-Fi</li>
+            <li>
+              <input type="checkbox" id="pool" name="pool" checked>
+              <label for="pool">Бассейн</label>
+            </li>
+            <li>
+              <input type="checkbox" id="parking" name="parking">
+              <label for="parking">Парковка</label>
+            </li>
+            <li>
+              <input type="checkbox" id="wifi" name="wifi">
+              <label for="wifi">Wi-Fi</label>
+            </li>
           </ul>
-        </section>
-        <section class="hotel-type">
-          <h3>Тип жилья</h3>
+        </fieldset>
+        <fieldset class="hotel-type">
+          <legend>Тип жилья</legend>
           <ul>
-            <li>Гостиница</li>
-            <li>Мотель</li>
-            <li>Апартаменты</li>
+            <li>
+              <input type="checkbox" id="hotel" name="hotel" checked>
+              <label for="hotel">Гостиница</label>
+            </li>
+            <li>
+              <input type="checkbox" id="motel" name="motel" checked>
+              <label for="motel">Мотель</label>
+            </li>
+            <li>
+              <input type="checkbox" id="apartments" name="apartments" checked>
+              <label for="apartments">Апартаменты</label>
+            </li>
           </ul>
-        </section>
+        </fieldset>
           <div class="price">
-            <b>Стоимость в сутки (Р):</b>
-            <!-- бегунок -->
+            <label for="price-range">Стоимость в сутки (Р):</label>
+            <div>
+              <span>от <output>0</output></span>
+              <span>до <output>3000</output></span>
+            </div>
+            <input type="range" id="price-range" name="price-range">
           </div>
-        <button>Отправить</button>
+        <button type="submit">Показать</button>
+      </form>
       </section>
       <section class="sorting-filter">
       <b>Найдено:3</b>
