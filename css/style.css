@@ -28,7 +28,6 @@ a {
 .welcome {
   background-color: #81b3d2;
   background-image: url("../img/background-photo.jpg");
-  background-size: 1200 px 100%;
   background-repeat: no-repeat;
   text-align: center;
 }
@@ -70,7 +69,6 @@ p {
   background-color: white;
 }
 .booking-button {
-  font: inherit;
   color: white;
   text-transform: uppercase;
   background-color: #766357;
@@ -126,11 +124,18 @@ p {
   color: rgba(0,0,0,0.3);
 }
 .booking-button:hover {
-  background-color: #604e43}
+  background-color: #604e43;
 }
 .booking-button:active {
   color: rgba(255, 255, 255,0.3);
   background-color: #503e33;
+}
+.search-button:hover {
+  background-color: #669ec0;
+}
+.search-button:active {
+  color: rgba(255, 255, 255,0.3);
+  background-color: #5496bd;
 }
 .search-item input:hover {
   background-color: #ebebeb;
@@ -138,9 +143,6 @@ p {
 .search-item input:active {
   background-color: white;
   border: 2px solid #e5e5e5;
-}
-.inner-page {
-  text-align: auto;
 }
 .site-navigation-current {
   color: #766357;
@@ -164,6 +166,16 @@ p {
   font-size: 21px;
   line-height: 26px;
 }
+.hotels-type,
+.hotels-booking-price,
+.hotel-rating span {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: normal;
+}
+.hotel-rating span:last-child {
+  background-color: #f2f2f2;
+}
 .hotel-info .link-about {
   font-size: 14px;
   line-height: 21px;
@@ -173,7 +185,6 @@ p {
 .hotel-info .link-book {
   font-size: 14px;
   line-height: 21px;
-  line-height: 18px;
   color: white;
   background-color: #766357;
 }
