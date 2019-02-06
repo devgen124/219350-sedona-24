@@ -8,8 +8,8 @@ body {
   text-transform: uppercase;
   color: black;
   background: #f2f2f2;
-  text-align: center;
-  /* поставил общее выравнивание по центру потому что почти везде текст по центру выравнен */
+
+
 }
 a {
   text-decoration: none;
@@ -38,13 +38,17 @@ a {
 .intro h1 {
   font-size: 21px;
   line-height: 26px;
+  text-align: center;
 }
+.intro h2,
 .intro h3 {
   font-size: 21px;
+  text-align: center;
 }
 .intro p {
   font-size: 14px;
   line-height: 26px;
+  text-align: center;
 }
 .booking {
   background-color: white;
@@ -52,9 +56,11 @@ a {
 .booking h2 {
   font-size: 30px;
   line-height: 36px;
+  text-align: center;
 }
 .booking p {
   line-height: 24px;
+  text-align: center;
 }
 p {
   color: #333333;
@@ -112,4 +118,76 @@ p {
 .footer-copyright b {
   font-size: 14px;
   line-height: 26px;
+}
+.site-navigation a:hover {
+  color: #81b3d2;
+}
+.site-navigation a:active {
+  color: rgba(0,0,0,0.3);
+}
+.booking-button:hover {
+  background-color: #604e43}
+}
+.booking-button:active {
+  color: rgba(255, 255, 255,0.3);
+  background-color: #503e33;
+}
+.search-item input:hover {
+  background-color: #ebebeb;
+}
+.search-item input:active {
+  background-color: white;
+  border: 2px solid #e5e5e5;
+}
+.inner-page {
+  text-align: auto;
+}
+.site-navigation-current {
+  color: #766357;
+}
+.sorting-filter,
+.hotels {
+  background-color: white;
+}
+.sorting-filter b {
+  font-size: 21px;
+  line-height: 26px;
+  text-align: left;
+}
+.sorting-filter h2 {
+  font-size: 12px;
+  line-height: 18px;
+  text-align: left;
+}
+.hotel-info a {
+  color: black;
+  font-size: 21px;
+  line-height: 26px;
+}
+.hotel-info .link-about {
+  font-size: 14px;
+  line-height: 21px;
+  color: white;
+  background-color: #81b3d2;
+}
+.hotel-info .link-book {
+  font-size: 14px;
+  line-height: 21px;
+  line-height: 18px;
+  color: white;
+  background-color: #766357;
+}
+.link-about:hover {
+  background-color: #669ec0;
+}
+.link-about:active {
+  color: rgba(255, 255, 255,0.3);
+  background-color: #5496bd;
+}
+.link-book:hover {
+  background-color: #604e43;
+}
+.link-book:active {
+  color: rgba(255, 255, 255,0.3);
+  background-color: #503e33;
 }
