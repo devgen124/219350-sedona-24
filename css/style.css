@@ -4,7 +4,110 @@ body {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 21px;
+  font-weight: bold;
   text-transform: uppercase;
   color: black;
   background: #f2f2f2;
+  text-align: center;
+  /* поставил общее выравнивание по центру потому что почти везде текст по центру выравнен */
+}
+a {
+  text-decoration: none;
+}
+.main-navigation {
+  background-color: white;
+}
+.site-navigation {
+  line-height: 26px;
+  font-weight: bold;
+  list-style: none;
+}
+.site-navigation a {
+  color: black;
+}
+.welcome {
+  background-color: #81b3d2;
+  background-image: url("../img/background-photo.jpg");
+  background-size: 1200 px 100%;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+.intro {
+  background-color: white;
+}
+.intro h1 {
+  font-size: 21px;
+  line-height: 26px;
+}
+.intro h3 {
+  font-size: 21px;
+}
+.intro p {
+  font-size: 14px;
+  line-height: 26px;
+}
+.booking {
+  background-color: white;
+}
+.booking h2 {
+  font-size: 30px;
+  line-height: 36px;
+}
+.booking p {
+  line-height: 24px;
+}
+p {
+  color: #333333;
+  font-weight: normal;
+}
+.search-hotels {
+  background-color: white;
+}
+.booking-button {
+  font: inherit;
+  color: white;
+  text-transform: uppercase;
+  background-color: #766357;
+  font-size: 21px;
+  line-height: 26px;
+  border: none;
+}
+.search-hotels ul {
+  list-style: none;
+}
+.search-item {
+  font-size: 14px;
+  line-height: 26px;
+  text-align: left;
+}
+.search-item input,
+.search-item button {
+  background-color: #f2f2f2;
+  border: none;
+  text-align: center;
+}
+.search-button {
+  background-color: #81b3d2;
+  color: white;
+  text-transform: uppercase;
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+  border: none;
+}
+.main-footer b {
+  background-color: #f9fbf6;
+  font-size: 21px;
+  line-height: 26px;
+}
+.footer-social ul {
+  list-style: none;
+}
+.social-button a {
+  background-color: #81b3d2;
+  color: white;
+}
+.footer-copyright b {
+  font-size: 14px;
+  line-height: 26px;
 }
