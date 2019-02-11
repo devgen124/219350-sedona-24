@@ -8,21 +8,65 @@ body {
   text-transform: uppercase;
   color: rgba(0,0,0,1);
   background-color: rgba(242, 242, 242, 1);
+  min-width: 1280px;
 }
+
+.layout-container {
+  margin: 0;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 
 a {
   text-decoration: none;
 }
 
 .main-navigation {
+
   background-color: rgba(255, 255, 255, 1);
+  height: 56px;
 }
 
 .site-navigation {
+  margin: 0;
   line-height: 26px;
   font-weight: bold;
   list-style: none;
+  display: flex;
+  justify-content: space-between;
+
 }
+
+.site-navigation-item{
+  width: 239px;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.site-navigation-item:first-child {
+  order:1;
+}
+
+.site-navigation-item:nth-child(2) {
+  order:2;
+}
+
+.site-navigation-item:nth-child(3) {
+  order:4;
+}
+
+.site-navigation-item:nth-child(4) {
+  order:4;
+}
+
+.main-header-logo {
+  width: 244px;
+  order: 3;
+  text-align: center;
+}
+
 
 .site-navigation a {
   color: rgba(0,0,0,1);
@@ -32,7 +76,9 @@ a {
   background-color: rgba(129, 179, 210, 1);
   background-image: url("../img/background-photo.jpg");
   background-repeat: no-repeat;
+  background-size: 1200px 800px;
   text-align: center;
+  height
 }
 
 .intro {
