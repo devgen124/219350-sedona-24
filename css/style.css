@@ -229,8 +229,13 @@ a {
   height: 58px;
 }
 
+.main-footer {
+  display: flex;
+  height: 120px;
+  justify-content: space-around;
+}
+
 .main-footer b {
-  background-color: rgba(249, 251, 246, 1);
   font-size: 21px;
   line-height: 26px;
 }
