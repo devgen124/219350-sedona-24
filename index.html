@@ -11,17 +11,15 @@
     <div class="layout-container">
     <header class="main-header">
       <nav class="main-navigation">
-      <ul class="site-navigation">
-        <li class="main-header-logo">
-          <a>
+        <a class="main-header-logo">
           <img src="img/logo-sedona.svg" width="140" height="71" alt="Добро пожаловать в Седону">
         </a>
-        </li>
-        <li class="site-navigation-item"><a href="info.html">Информация</a></li>
-        <li class="site-navigation-item"><a href="media.html">Фото и видео</a></li>
-        <li class="site-navigation-item"><a href="map.html">Карта штата</a></li>
-        <li class="site-navigation-item"><a href="hotels.html">Гостиницы</a></li>
-      </ul>
+        <ul class="site-navigation">
+          <li class="site-navigation-item"><a href="info.html">Информация</a></li>
+          <li class="site-navigation-item"><a href="media.html">Фото и видео</a></li>
+          <li class="site-navigation-item"><a href="map.html">Карта штата</a></li>
+          <li class="site-navigation-item"><a href="hotels.html">Гостиницы</a></li>
+        </ul>
     </nav>
   </header>
   <main>
@@ -79,31 +77,40 @@
      </section>
      <section class="booking">
        <h2>Заинтересовались?</h2>
-       <p class="index-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+       <p class="index-text">Укажите предполагаемые даты поездки,<br>
+          и мы покажем вам лучшие предложения гостиниц в Седоне</p>
        <button class="booking-button">Поиск гостиницы в Седоне</button>
          <section class="search-hotels">
          <h3 class="visually-hidden">Поиск гостиницы</h3>
          <form action="https://echo.htmlacademy.ru" method="post">
-         <ul>
-           <li class="search-item">
+         <ul class="search-form-list">
+           <li class="search-label">
              <label for="arrival-date">Дата заезда:</label>
+           </li>
+           <li class="search-input date-input">
              <input id="arrival-date" type="date" name="arrival-date" placeholder="24 апреля 2017">
            </li>
-           <li class="search-item">
+           <li class="search-label">
              <label for="departure-date">Дата выезда:</label>
+          </li>
+          <li class="search-input date-input">
              <input id="departure-date" type="date" name="departure-date" placeholder="4 июля 2017">
            </li>
-           <li class="search-item">
+           <li class="search-label">
              <label for="adults-amount">Взрослые:</label>
-             <button>Больше</button>
-             <input id="adults-amount" type="number" name="adults-amount" min="1" value="2">
-             <button>Меньше</button>
            </li>
-           <li class="search-item">
+           <li class="search-input amount-input">
+             <button aria-label="Увеличить значение">+</button>
+             <input id="adults-amount" type="number" name="adults-amount" min="1" value="2">
+             <button aria-label="Уменьшить значение">-</button>
+           </li>
+           <li class="search-label">
              <label for="children-amount">Дети:</label>
-             <button>Больше</button>
+           </li>
+           <li class="search-input amount-input">
+             <button aria-label="Увеличить значение">+</button>
              <input id="children-amount" type="number" name="children-amount" min="0" value="0">
-             <button>Меньше</button>
+             <button aria-label="Уменьшить значение">-</button>
            </li>
          </ul>
          <button class="search-button" type="submit">Найти</button>
