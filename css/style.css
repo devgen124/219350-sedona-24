@@ -414,6 +414,7 @@ a {
   margin-left: 6px;
   text-align: left;
   flex-grow: 1;
+  /* как сделать чтоб заработал flex-grow? */
 }
 
 .hotel-rating {
