@@ -451,17 +451,34 @@ img {
   fill: rgba(129, 179, 210, 1);
 }
 
-.minus:hover .minus::before {
+.minus:hover::before {
   background-color: rgba(0, 0, 0, 1);
 }
 
-.plus:hover .plus::before,
-.plus:hover .plus::after {
+.plus:hover::before,
+.plus:hover::after {
   background-color: rgba(0, 0, 0, 1);
+}
+
+.minus:active::before {
+  background-color: rgba(129, 179, 210, 1);
+}
+
+.plus:active::before,
+.plus:active::after {
+  background-color: rgba(129, 179, 210, 1);
 }
 
 .social-button a:hover {
-  background-color: #669ec0;
+  background-color: rgba(102, 158, 192, 1);
+}
+
+.social-button a:active {
+  background-color: rgba(84, 150, 189, 1);
+}
+
+.social-button a:active path {
+  fill: rgba(255, 255, 255, 0.3);
 }
 
 .footer-copyright a:hover path {
