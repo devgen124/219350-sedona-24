@@ -6,7 +6,7 @@ body {
   line-height: 21px;
   font-weight: bold;
   text-transform: uppercase;
-  color: rgba(0,0,0,1);
+  color: rgba(0, 0, 0, 1);
   background-color: rgba(242, 242, 242, 1);
   min-width: 1280px;
 }
@@ -242,6 +242,8 @@ img {
 .dates input {
   flex-grow: 1;
   padding: 0 12px;
+
+  text-transform: uppercase;
 }
 
 /* календарик */
@@ -281,6 +283,8 @@ img {
 
 .amounts input {
   text-align: center;
+
+  -moz-appearance: textfield;
 }
 
 .amounts button,
@@ -612,9 +616,21 @@ img {
 
 .stars {
   min-height: 17px;
-  width: 90px;
   background-image: url("../img/star.svg");
   background-repeat: space;
+  align-self: flex-end;
+}
+
+.four-stars {
+  width: 89px;
+}
+
+.three-stars {
+  width: 66px;
+}
+
+.two-stars {
+  width: 43px;
 }
 
 
