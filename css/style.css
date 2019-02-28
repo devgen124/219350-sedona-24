@@ -77,6 +77,14 @@ img {
 
 }
 
+.site-navigation a:hover {
+  color: rgba(129, 179, 210, 1);
+}
+
+.site-navigation a:active {
+  color: rgba(0,0,0,0.3);
+}
+
 .welcome {
   position: relative;
   min-height: 509px;
@@ -251,8 +259,6 @@ img {
   margin-bottom: 48px;
 }
 
-
-
 .booking-button {
   min-width: 568px;
   min-height: 86px;
@@ -263,6 +269,15 @@ img {
   line-height: 26px;
   border: none;
   margin-left: 314px;
+}
+
+.booking-button:hover {
+  background-color: rgba(96, 78, 67, 1);
+}
+
+.booking-button:active {
+  color: rgba(255, 255, 255,0.3);
+  background-color: rgba(80, 62, 51, 1);
 }
 
 /* ФОРМА */
@@ -321,13 +336,6 @@ img {
   text-transform: uppercase;
 }
 
-/* календарик */
-.form-item svg {
-  position: absolute;
-  right: 10px;
-  top: 9px;
-  fill: rgba(202, 202, 202, 1);
-}
 
  .form-item label {
   font-size: 14px;
@@ -344,7 +352,8 @@ img {
 
 
 .form-item input,
-.form-item button {
+.plus,
+.minus {
   box-sizing: border-box;
   background-color: rgba(242, 242, 242, 1);
   border: none;
@@ -352,10 +361,44 @@ img {
   min-height: 38px;
 }
 
+.form-item input:hover {
+  background-color: rgba(235, 235, 235, 1);
+}
+
+.form-item input:focus {
+  background-color: rgba(255, 255, 255, 1);
+  border: 2px solid rgba(229, 229, 229, 1);
+}
+
 .form-item input::-webkit-inner-spin-button {
     -webkit-appearance: none;
 }
 
+.form-item .calendar {
+  position: absolute;
+  right: 10px;
+  top: 9px;
+
+  display: inline;
+  padding: 0;
+  width: 21px;
+  height: 22px;
+  fill: rgba(202, 202, 202, 1);
+  border: none;
+  background: none;
+}
+
+.calendar svg {
+  fill: rgba(202, 202, 202, 1);
+}
+
+.calendar svg:hover {
+  fill: rgba(0, 0, 0, 1);
+}
+
+.calendar svg:active {
+  fill: rgba(129, 179, 210, 1);
+}
 .amounts input {
   text-align: center;
 
@@ -397,7 +440,23 @@ img {
   height: 11px;
 
   background-color: #a9a9a9;
+}
+.minus:hover::before {
+  background-color: rgba(0, 0, 0, 1);
+}
 
+.plus:hover::before,
+.plus:hover::after {
+  background-color: rgba(0, 0, 0, 1);
+}
+
+.minus:active::before {
+  background-color: rgba(129, 179, 210, 1);
+}
+
+.plus:active::before,
+.plus:active::after {
+  background-color: rgba(129, 179, 210, 1);
 }
 
 .search-button {
@@ -410,6 +469,15 @@ img {
   border: none;
   height: 58px;
   cursor: pointer;
+}
+
+.search-button:hover {
+  background-color: rgba(102, 158, 192, 1);
+}
+
+.search-button:active {
+  color: rgba(255, 255, 255,0.3);
+  background-color: #5496bd;
 }
 
 /* КОНЕЦ ФОРМЫ */
@@ -468,6 +536,18 @@ img {
   color: rgba(255, 255, 255, 1);
 }
 
+.social-button a:hover {
+  background-color: rgba(102, 158, 192, 1);
+}
+
+.social-button a:active {
+  background-color: rgba(84, 150, 189, 1);
+}
+
+.social-button a:active path {
+  fill: rgba(255, 255, 255, 0.3);
+}
+
 .footer-copyright {
   width: 400px;
   margin: 0;
@@ -489,80 +569,6 @@ img {
   align-content: center;
 
   margin-right: 15px;
-}
-
-/* ПОВЕДЕНИЕ КНОПОК  */
-.site-navigation a:hover {
-  color: rgba(129, 179, 210, 1);
-}
-
-.site-navigation a:active {
-  color: rgba(0,0,0,0.3);
-}
-
-.booking-button:hover {
-  background-color: rgba(96, 78, 67, 1);
-}
-
-.booking-button:active {
-  color: rgba(255, 255, 255,0.3);
-  background-color: rgba(80, 62, 51, 1);
-}
-
-.search-button:hover {
-  background-color: rgba(102, 158, 192, 1);
-}
-
-.search-button:active {
-  color: rgba(255, 255, 255,0.3);
-  background-color: #5496bd;
-}
-
-.form-item input:hover {
-  background-color: rgba(235, 235, 235, 1);
-}
-
-.form-item input:focus {
-  background-color: rgba(255, 255, 255, 1);
-  border: 2px solid rgba(229, 229, 229, 1);
-}
-
-.form-item svg:hover {
-  fill: rgba(0, 0, 0, 1);
-}
-
-.form-item svg:active {
-  fill: rgba(129, 179, 210, 1);
-}
-
-.minus:hover::before {
-  background-color: rgba(0, 0, 0, 1);
-}
-
-.plus:hover::before,
-.plus:hover::after {
-  background-color: rgba(0, 0, 0, 1);
-}
-
-.minus:active::before {
-  background-color: rgba(129, 179, 210, 1);
-}
-
-.plus:active::before,
-.plus:active::after {
-  background-color: rgba(129, 179, 210, 1);
-}
-
-.social-button a:hover {
-  background-color: rgba(102, 158, 192, 1);
-}
-
-.social-button a:active {
-  background-color: rgba(84, 150, 189, 1);
-}
-
-.social-button a:active path {
-  fill: rgba(255, 255, 255, 0.3);
 }
 
 .footer-copyright a:hover path {
@@ -645,6 +651,14 @@ img {
   background: url(../img/checkbox-on.svg) no-repeat 0 0;
 }
 
+.filters-input:disabled + label::before {
+  background: url(../img/checkbox-off-disabled.svg) no-repeat 0 0;
+}
+
+.filters-input:checked:disabled + label::before {
+  background: url(../img/checkbox-on-disabled.svg) no-repeat 0 0;
+}
+
 .filters-set:first-child {
   min-width: 257px;
 }
@@ -693,7 +707,7 @@ img {
 .price-controls label {
   display: inline-block;
   width: 90px;
-  padding-left: 65px;
+
 
   font-size: 14px;
   line-height: 34px;
@@ -711,6 +725,14 @@ img {
 
   background: none;
   border: none;
+}
+
+.price-controls .min-price {
+  padding-left: 65px;
+}
+
+.price-controls .max-price {
+  padding-left: 58px;
 }
 
 .range-controls {
@@ -760,7 +782,8 @@ img {
 
 .btn-transparent {
   display: block;
-  margin: 0 auto;
+  margin: 0;
+  margin-left: 84px;
   padding: 6px 35px;
 
   font-size: 14px;
@@ -925,6 +948,14 @@ img {
   margin: 0;
 }
 
+.hotel-info h3:hover {
+  color: rgba(129, 179, 210, 1);
+}
+
+.hotel-info h3:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .hotels-type,
 .hotels-booking-price,
 .hotel-rating span {
@@ -967,10 +998,26 @@ img {
   min-width: 110px;
 }
 
+.link-about:hover {
+  background-color: rgba(102, 158, 192, 1);
+}
+.link-about:active {
+  color: rgba(255, 255, 255,0.3);
+  background-color: rgba(84, 150, 189, 1);
+}
+
 .link-book {
   background-color: rgba(118, 99, 87, 1);
   margin-left: 6px;
   max-width: 142px;
+}
+
+.link-book:hover {
+  background-color: rgba(96, 78, 67, 1);
+}
+.link-book:active {
+  color: rgba(255, 255, 255,0.3);
+  background-color: rgba(80, 62, 51, 1);
 }
 
 .hotel-rating {
@@ -1022,27 +1069,4 @@ img {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-.link-about:hover {
-  background-color: rgba(102, 158, 192, 1);
-}
-.link-about:active {
-  color: rgba(255, 255, 255,0.3);
-  background-color: rgba(84, 150, 189, 1);
-}
-.link-book:hover {
-  background-color: rgba(96, 78, 67, 1);
-}
-.link-book:active {
-  color: rgba(255, 255, 255,0.3);
-  background-color: rgba(80, 62, 51, 1);
-}
-
-.hotel-info h3:hover {
-  color: rgba(129, 179, 210, 1);
-}
-
-.hotel-info h3:active {
-  color: rgba(0, 0, 0, 0.3);
 }
