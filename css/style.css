@@ -537,6 +537,8 @@ img {
   padding: 0;
   height: 593px;
   z-index: -2;
+
+  background-image: url("../img/map.jpg");
 }
 
 .footer {
