@@ -1,6 +1,5 @@
 var popupButton = document.querySelector(".booking-button");
 var form = document.querySelector(".search-hotels");
-var submitButton = document.querySelector(".search-button");
 var adults = document.querySelector("[name=adults-amount]");
 var children = document.querySelector("[name=children-amount]");
 var adultsStorage = localStorage.getItem("adults");
@@ -17,7 +16,8 @@ popupButton.addEventListener("click", function(evt){
   }
 });
 
-submitButton.addEventListener("submit", function(){
+form.addEventListener("submit", function(){
   localStorage.setItem("adults", adults.value);
   localStorage.setItem("children", children.value);
+  console.log("все ок");
 });
