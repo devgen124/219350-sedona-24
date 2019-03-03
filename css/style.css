@@ -418,6 +418,7 @@ img {
 .form-item input:focus {
   background-color: rgba(255, 255, 255, 1);
   border: 2px solid rgba(229, 229, 229, 1);
+  outline: 0;
 }
 
 .form-item input::-webkit-inner-spin-button {
