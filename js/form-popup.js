@@ -19,5 +19,4 @@ popupButton.addEventListener("click", function(evt){
 form.addEventListener("submit", function(){
   localStorage.setItem("adults", adults.value);
   localStorage.setItem("children", children.value);
-  console.log("все ок");
 });
