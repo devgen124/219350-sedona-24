@@ -26,16 +26,19 @@ img {
 }
 
 .main-navigation {
+  position: relative;
+
   padding: 0;
   background-color: rgba(255, 255, 255, 1);
   min-height: 56px;
-  position: relative;
 }
 
 .site-navigation {
   margin: 0;
   padding: 0;
+
   list-style: none;
+
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -44,6 +47,7 @@ img {
 .site-navigation-item{
   width: 239px;
   margin-top: 15px;
+
   text-align: center;
 }
 
@@ -57,15 +61,17 @@ img {
 
 .main-header-logo {
   position: absolute;
+  z-index: 2;
+
   width: 140px;
   left: 529px;
-  z-index: 2;
 }
 
 
 .site-navigation a {
   display: block;
   box-sizing: border-box;
+
   color: rgba(0,0,0,1);
   text-decoration: none;
   line-height: 26px;
@@ -86,17 +92,19 @@ img {
 }
 
 .site-navigation a:active {
-  color: rgba(0,0,0,0.3);
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .welcome {
   position: relative;
+
   min-height: 509px;
   background-color: rgba(129, 179, 210, 1);
   background-image: url("../img/background-photo.jpg");
   background-repeat: no-repeat;
   background-size: 1200px auto;
   background-position: 0 -55px;
+
   text-align: center;
 }
 
@@ -112,6 +120,7 @@ img {
   height: 59px;
   left: 0;
   bottom: -2px;
+
   background-image: url("../img/intro-mask.svg");
   background-repeat: no-repeat;
 }
@@ -155,7 +164,6 @@ img {
 
 
 .reasons-item {
-
   box-sizing: inherit;
 
   line-height: 21px;
@@ -178,8 +186,9 @@ img {
 .reasons-item-layout {
   display: flex;
   flex-direction: column;
-  min-height: 256px;
+
   box-sizing: inherit;
+  min-height: 256px;
   width: 400px;
   padding: 46px 48px 30px;
 }
@@ -196,11 +205,12 @@ img {
   content: "— №" counter(items) " —";
 
   display: block;
+  margin-top: 26px;
+  margin-bottom: 5px;
+
   font-size: 14px;
   line-height: 21px;
   font-weight: normal;
-  margin-top: 26px;
-  margin-bottom: 5px;
 }
 
 .reasons-item-layout p {
@@ -220,9 +230,6 @@ img {
   padding: 0 50px 20px;
   min-height: 330px;
   width: 400px;
-  /* display: flex;
-  flex-direction: column;
-  align-items: center; */
 }
 
 .features-item h3::before {
@@ -251,25 +258,25 @@ img {
 }
 .booking {
   position: relative;
+  z-index: 2;
+
   min-height: 291px;
   background-color: rgba(255, 255, 255, 1);
   padding-top: 1px;
   text-align: center;
-
-  z-index: 2;
 }
 
 .booking::after {
   content: "";
 
   position: absolute;
+  z-index: 2;
   top: 0;
   left: 0;
   width: 1200px;
   height: 291px;
-  background-color: rgba(255, 255, 255, 1);
-  z-index: 2;
 
+  background-color: rgba(255, 255, 255, 1);
 }
 
 .booking h2 {
@@ -394,14 +401,16 @@ img {
  .form-item label {
   font-size: 14px;
   line-height: 26px;
+
   padding: 5px 0;
   width: 113px;
 }
 
 .amounts:last-child label {
   width: 40px;
-  flex-grow: 1;
   margin-left: 51px;
+
+  flex-grow: 1;
 }
 
 
@@ -438,9 +447,11 @@ img {
   padding: 0;
   width: 21px;
   height: 22px;
-  fill: rgba(202, 202, 202, 1);
+
   border: none;
   background: none;
+
+  fill: rgba(202, 202, 202, 1);
 }
 
 .calendar svg {
@@ -456,7 +467,6 @@ img {
 }
 .amounts input {
   text-align: center;
-
 
   -moz-appearance: textfield;
 }
@@ -516,6 +526,8 @@ img {
 }
 
 .search-button {
+  height: 58px;
+
   background-color: rgba(129, 179, 210, 1);
   color: rgba(255, 255, 255, 1);
   text-transform: uppercase;
@@ -523,7 +535,7 @@ img {
   line-height: 26px;
   text-align: center;
   border: none;
-  height: 58px;
+
   cursor: pointer;
 }
 
@@ -548,8 +560,9 @@ img {
 }
 
 .footer {
-  display: flex;
   height: 120px;
+
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -568,9 +581,10 @@ img {
 .footer-hashtag {
   font-size: 21px;
   line-height: 26px;
-  text-align: center;
   width: 400px;
   box-sizing: border-box;
+
+  text-align: center;
 }
 
 .footer-social {
@@ -591,6 +605,7 @@ img {
   margin: 0 3px 0;
   width: 46px;
   height: 48px;
+
   background-color: rgba(129, 179, 210, 1);
   color: rgba(255, 255, 255, 1);
 }
@@ -658,12 +673,14 @@ img {
 
 .filters form {
   display: flex;
+
   padding: 27px 72px;
 }
 
 .filters-set legend {
   font-size: 16px;
   font-weight: 600;
+
   margin-bottom: 25px;
 }
 
@@ -741,13 +758,14 @@ img {
 
 .price-controls {
   position: relative;
+
   height: 32px;
   margin-bottom: 20px;
+  border: 2px solid rgba(255, 255, 255, 1);
+  border-radius: 2px;
 
   font-size: 0;
 
-  border: 2px solid rgba(255, 255, 255, 1);
-  border-radius: 2px;
 }
 
 .price-controls::after {
@@ -853,6 +871,7 @@ img {
   background: transparent;
   border: 2px solid rgba(255, 255, 255, 1);
   border-radius: 2px;
+
   cursor: pointer;
 }
 
@@ -865,15 +884,18 @@ img {
 .sorting-filter,
 .hotels {
   background-color: rgba(255, 255, 255, 1);
+
   display: flex;
   flex-direction: column;
 }
 
 .sorting-filter {
   height: 86px;
+
   display: flex;
   flex-direction: row;
   align-items: center;
+
   border-bottom: 1px solid rgba(242, 242, 242, 1);
 }
 
@@ -898,9 +920,11 @@ img {
 .sorting-type-list {
   margin: 0;
   padding: 0;
+
   display: flex;
-  list-style: none;
   flex-grow: 1;
+
+  list-style: none;
 }
 
 .sorting-type-list li {
@@ -973,10 +997,11 @@ img {
 
 .hotels-list-item {
   padding: 0 72px;
-  display: flex;
   border-bottom: 1px solid rgba(242, 242, 242, 1);
-  justify-content: space-between;
   min-height: 150px;
+
+  display: flex;
+  justify-content: space-between;
 }
 
 .hotel-photo {
@@ -995,16 +1020,18 @@ img {
 
 .hotel-name {
   display: block;
-  text-decoration: none;
   min-width: 100%;
   margin-bottom: 7px;
+
+  text-decoration: none;
 }
 
 .hotel-info h3 {
+  margin: 0;
+
   font-size: 21px;
   line-height: 26px;
   color: rgba(0, 0, 0, 1);
-  margin: 0;
 }
 
 .hotel-info h3:hover {
@@ -1018,10 +1045,11 @@ img {
 .hotels-type,
 .hotels-booking-price,
 .hotel-rating span {
+  height: 27px;
+
   font-size: 14px;
   line-height: 21px;
   font-weight: normal;
-  height: 27px;
 }
 
 .hotels-type {
@@ -1060,6 +1088,7 @@ img {
 .link-about:hover {
   background-color: rgba(102, 158, 192, 1);
 }
+
 .link-about:active {
   color: rgba(255, 255, 255,0.3);
   background-color: rgba(84, 150, 189, 1);
@@ -1074,6 +1103,7 @@ img {
 .link-book:hover {
   background-color: rgba(96, 78, 67, 1);
 }
+
 .link-book:active {
   color: rgba(255, 255, 255,0.3);
   background-color: rgba(80, 62, 51, 1);
@@ -1083,12 +1113,14 @@ img {
   display:flex;
   flex-direction: column;
   justify-content: space-between;
+
   width: 112px;
   margin: 30px 0;
 }
 
 .stars {
   min-height: 17px;
+
   background-image: url("../img/star.svg");
   background-repeat: space no-repeat;
   align-self: flex-end;
