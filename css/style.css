@@ -328,7 +328,6 @@ img {
 .search-hotels {
   position: absolute;
   z-index: 1;
-  transform: translateY(-395px);
 
   width: 568px;
   left: 316px;
@@ -338,6 +337,10 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.search-hotels-hidden {
+  transform: translateY(-395px);
 }
 
 .search-hotels-show {
@@ -798,7 +801,7 @@ img {
   margin: 0;
 
   color: inherit;
-  font: inherit;
+  font-size: inherit;
 
   background: none;
   border: none;
