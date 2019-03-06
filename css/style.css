@@ -86,7 +86,7 @@ img {
   color: rgba(0,0,0,1);
   text-decoration: none;
   line-height: 26px;
-  font-weight: 600;
+  font-weight: 700;
 
 }
 
@@ -147,13 +147,17 @@ img {
 .intro h1 {
   width: 440px;
   font-size: 21px;
-  font-weight: 600;
+  font-weight: 700;
 
   margin-left: auto;
   margin-right: auto;
   margin-top: 58px;
   margin-bottom: 27px;
 
+}
+
+.intro p {
+  color: rgba(102, 102, 102, 1);
 }
 
 .reasons-list {
@@ -191,7 +195,7 @@ img {
 
 
 .reasons-item > p {
-  color: rgba(51, 51, 51, 1);
+  color: rgba(102, 102, 102, 1);
 }
 
 .reasons-item-blue {
@@ -226,7 +230,7 @@ img {
   margin: 0;
   padding: 0 75px;
   font-size: 21px;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .reasons-item-layout > h3::after {
@@ -240,15 +244,20 @@ img {
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
+  color: rgba(102, 102, 102, 1);
 }
 
-.reasons-item-layout p {
+.reasons-item-layout:first-child > h3::after,
+.reasons-item-layout:nth-child(2) > h3::after {
+  color: rgba(255, 255, 255, 1);
 }
 
 .features-list {
   margin: 0;
   padding: 0;
+
   list-style: none;
+  background-color: rgba(255, 255, 255, 1);
 
   display: -webkit-box;
 
@@ -290,6 +299,11 @@ img {
 .features-item h3 {
   margin-bottom: 22px;
 }
+
+.features-item p {
+  color: rgba(102, 102, 102, 1);
+}
+
 .booking {
   position: relative;
   z-index: 2;
@@ -329,6 +343,7 @@ img {
 
   line-height: 24px;
   margin-bottom: 47px;
+  color: rgba(102, 102, 102, 1);
 }
 
 .booking-button {
@@ -341,6 +356,7 @@ img {
   color: rgba(255, 255, 255, 1);
   text-transform: uppercase;
   font-size: 21px;
+  font-weight: 700;
   line-height: 26px;
   text-align: center;
 
@@ -487,6 +503,7 @@ img {
  .form-item label {
   font-size: 14px;
   line-height: 26px;
+  font-weight: 700;
 
   padding: 5px 0;
   width: 113px;
@@ -511,7 +528,7 @@ img {
           box-sizing: border-box;
   background-color: rgba(242, 242, 242, 1);
   border: none;
-  font-weight: 600;
+  font-weight: 700;
   min-height: 38px;
 }
 
@@ -627,6 +644,7 @@ img {
   color: rgba(255, 255, 255, 1);
   text-transform: uppercase;
   font-size: 21px;
+  font-weight: 700;
   line-height: 26px;
   text-align: center;
   border: none;
@@ -708,7 +726,7 @@ img {
 
 }
 
-.social-button a {
+.social-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -727,15 +745,15 @@ img {
   color: rgba(255, 255, 255, 1);
 }
 
-.social-button a:hover {
+.social-button:hover {
   background-color: rgba(102, 158, 192, 1);
 }
 
-.social-button a:active {
+.social-button:active {
   background-color: rgba(84, 150, 189, 1);
 }
 
-.social-button a:active path {
+.social-button:active path {
   fill: rgba(255, 255, 255, 0.3);
 }
 
@@ -756,14 +774,14 @@ img {
           align-items: center;
 }
 
-.footer-copyright b {
+.footer-copyright span {
   font-size: 14px;
   line-height: 26px;
   margin-left: 17px;
   margin-right: 8px;
 }
 
-.footer-copyright a {
+.footer-copyright-link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -773,11 +791,11 @@ img {
   margin-right: 15px;
 }
 
-.footer-copyright a:hover path {
+.footer-copyright-link:hover path {
   fill: rgba(129, 179, 210, 1);
 }
 
-.footer-copyright a:active path {
+.footer-copyright-link:active path {
   fill: rgba(189, 187, 188, 1);
 }
 
@@ -810,7 +828,7 @@ img {
 
 .filters-set legend {
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 700;
 
   margin-bottom: 25px;
 }
@@ -885,7 +903,7 @@ img {
 .filter-range-title {
   margin-bottom: 9px;
 
-  font-weight: 600;
+  font-weight: 700;
   font-size: 16px;
 }
 
@@ -1065,6 +1083,7 @@ img {
 
 .sorting-filter h2 {
   font-size: 12px;
+  font-weight: 400;
   line-height: 18px;
   text-align: left;
 
@@ -1159,7 +1178,7 @@ img {
 
 .hotels-list-item {
   padding: 0 72px;
-  border-bottom: 1px solid rgba(242, 242, 242, 1);
+  border-bottom: 1px solid rgba(229, 229, 229, 1);
   min-height: 150px;
 
   display: -webkit-box;
@@ -1217,13 +1236,13 @@ img {
 }
 
 .hotels-type,
-.hotels-booking-price,
-.hotel-rating span {
+.hotels-booking-price {
   height: 27px;
 
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
+  color: rgba(51, 51, 51, 1);
 }
 
 .hotels-type {
@@ -1250,6 +1269,7 @@ img {
 
   text-decoration: none;
   font-size: 14px;
+  font-weight: 700;
   line-height: 27px;
   color: rgba(255, 255, 255, 1);
   text-align: center;
@@ -1298,6 +1318,10 @@ img {
 
   width: 112px;
   margin: 30px 0;
+}
+
+.hotel-rating span{
+  height: 27px;
 }
 
 .stars {
