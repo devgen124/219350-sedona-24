@@ -62,21 +62,22 @@ img {
   padding-bottom: 15px;
 }
 
-.site-navigation-item:first-child,
-.site-navigation-item:nth-child(2) {
+.site-navigation-item:nth-child(4n+1),
+.site-navigation-item:nth-child(4n+2)
+ {
   padding-left: 72px;
 
   text-align: left;
 }
 
-.site-navigation-item:nth-child(3),
-.site-navigation-item:nth-child(4) {
+.site-navigation-item:nth-child(4n+3),
+.site-navigation-item:nth-child(4n+4) {
   padding-right: 72px;
 
   text-align: right;
 }
 
-.site-navigation-item:nth-child(2) {
+.site-navigation-item:nth-child(4n+2) {
   margin-right: 244px;
 }
 
